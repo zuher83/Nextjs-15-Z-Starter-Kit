@@ -1,20 +1,18 @@
-import './globals.css';
-
+import './../globals.css';
 import type { Metadata } from 'next';
+import React from 'react';
 import localFont from 'next/font/local';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import React from 'react';
-import { ThemeProvider } from '@/providers/theme-provider';
 
 const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
+  src: './../fonts/GeistVF.woff',
   variable: '--font-geist-sans',
   weight: '100 900',
 });
 
 const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
+  src: './../fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
   weight: '100 900',
 });
@@ -31,8 +29,6 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
-
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
@@ -43,14 +39,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

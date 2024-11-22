@@ -1,0 +1,10 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "ThemeSwitcher": {
+    "Light": "Clair",
+    "Dark": "Sombre",
+    "System": "Systéme"
+  }
+}

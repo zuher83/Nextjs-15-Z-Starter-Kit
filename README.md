@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js 15 Starter Kit with Shadcn UI
 
-## Getting Started
+A modern and feature-rich starter template built with Next.js 15, Shadcn UI, and Tailwind CSS.
 
-First, run the development server:
+## ✨ Features
 
-```bash
+- ⚡ Next.js 15 with App Router
+- 🎨 Shadcn UI with Custom Color Variants
+- 🌈 Tailwind CSS 3.4
+- 🌍 Internationalization with Next-intl (EN, FR, DE)
+- 🔒 Public & Admin Routes
+- 📱 Responsive Design
+- 🛠️ TypeScript Support
+- 💅 ESLint & Prettier Configuration
+
+## 🌐 URL Structure
+
+- Public Pages: `your-domain.com/{lang}` (e.g., `your-domain.com/en`)
+- Admin Panel: `your-domain.com/admin`
+
+## 🎯 Custom UI Components
+
+Enhanced Shadcn components with additional variants:
+- ✅ Success
+- ⚠️ Warning
+- ℹ️ Info
+
+## 🚦 Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+3. Run the development server:
+```
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
+```
+4. Open http://localhost:3000 in your browser
+
+## 🗂️ Project Structure
+```
+root/
+├── messages/                    # Translation files for all languages
+│   ├── en.json
+│   ├── fr.json
+│   └── de.json
+├── public/                      # Static files
+└── src/
+    ├── app/
+    │   ├── (private)/          # Private routes
+    │   │   ├── admin/          # Admin dashboard
+    │   │   │   └── page.tsx
+    │   │   └── layout.tsx
+    │   ├── (public)/          # Public routes
+    │   │   └── [locale]/      # i18n routes
+    │   │       ├── layout.tsx
+    │   │       └── page.tsx
+    │   └── fonts/             # Local fonts
+    ├── components/            # Reusable components
+    │   ├── ui/                # Shadcn components
+    │   └── layouts/           # Layout components
+    ├── hooks/                 # Custom React hooks
+    │   ├── use-mobile/        # Mobile related hooks
+    │   └── use-toast/         # Shadcn Toast hooks
+    ├── i18n/                  # i18n configuration
+    │   ├── config.ts
+    │   └── settings.ts
+    ├── lib/                   # Utility functions
+    │   └── utils/             # Helper functions
+    ├── providers/             # React context providers
+    │   └── theme-provider     # Theme switcher
+    ├── types/                 # TypeScript definitions
+    │   └── languages.d.ts
+    └── styles/             # Global styles
+        └── globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Configuration
+- next-intl: Language configuration in src/i18n.ts
+- shadcn-ui: Theme configuration in components.json
+- tailwind.config.js: Tailwind CSS configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Documentation Links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Shadcn UI](https://ui.shadcn.com)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Next-intl](https://next-intl-docs.vercel.app)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [TanStack Table](https://tanstack.com/table/latest)
 
-## Learn More
+## 📋 TODO List
 
-To learn more about Next.js, take a look at the following resources:
+### 📝 Rich Text Editor Integration
+- [ ] Implement [Lexical Editor](https://lexical.dev/)
+  - [ ] Configure basic editor setup
+  - [ ] Add custom toolbar
+  - [ ] Integrate with form components
+  - [ ] Add markdown support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎨 Additional UI Components
+- [ ] [Aceternity UI](https://ui.aceternity.com/)
+  - [ ] Animated components
+  - [ ] Gradient effects
+  - [ ] Tailwind templates
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] [Magic UI](https://magicui.design/)
+  - [ ] Advanced animations
+  - [ ] Interactive components
+  - [ ] Custom effects
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+MIT License - feel free to use this starter kit for your projects!
