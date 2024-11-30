@@ -6,5 +6,24 @@
     "Light": "Light",
     "Dark": "Dark",
     "System": "System"
+  },
+  "Home": {
+    "DisplayToast": "Display Toast",
+    "GoToAdminPage": "Go to admin Page",
+    "ThisIsAToast": "This is a toast",
+    "Hello": "Hello",
+    "WelcomeToYourNextjsApp": "Welcome To Your Nextjs App !",
+    "DialogExample": "Dialog Exemple",
+    "DialogMainContent": "Add the content you wish to display in your Dialog.",
+    "MainContent": "Main content",
+    "DialogDescription": "Here's an example of Dialog content. You customize this content to suit your needs.",
+    "Open Dialog": "Open Dialog"
+  },
+  "Topbar": {
+    "Features": "Features",
+    "Testimonials": "Testimonials",
+    "Pricing": "Pricing",
+    "FAQ": "FAQ",
+    "Login": "Login"
   }
 }

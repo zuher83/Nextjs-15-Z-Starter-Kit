@@ -1,5 +1,29 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "title": "Hallo Welt!"
+  },
+  "ThemeSwitcher": {
+    "Light": "Hell",
+    "Dark": "Dunkel",
+    "System": "System"
+  },
+  "Home": {
+    "DisplayToast": "Toast anzeigen",
+    "GoToAdminPage": "Zur Admin-Seite gehen",
+    "ThisIsAToast": "Das ist ein Toast",
+    "Hello": "Hallo",
+    "WelcomeToYourNextjsApp": "Willkommen zu Ihrer Nextjs App!",
+    "DialogExample": "Dialog Beispiel",
+    "DialogMainContent": "Fügen Sie den Inhalt hinzu, den Sie in Ihrem Dialog anzeigen möchten.",
+    "MainContent": "Hauptinhalt",
+    "DialogDescription": "Hier ist ein Beispiel für Dialoginhalt. Sie können diesen Inhalt an Ihre Bedürfnisse anpassen.",
+    "Open Dialog": "Dialog öffnen"
+  },
+  "Topbar": {
+    "Features": "Funktionen",
+    "Testimonials": "Referenzen",
+    "Pricing": "Preise",
+    "FAQ": "Häufige Fragen",
+    "Login": "Anmelden"
   }
 }

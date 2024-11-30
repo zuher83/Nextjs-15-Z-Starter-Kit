@@ -1,10 +1,29 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "title": "Bonjour le monde!"
   },
   "ThemeSwitcher": {
     "Light": "Clair",
     "Dark": "Sombre",
-    "System": "Systéme"
+    "System": "Système"
+  },
+  "Home": {
+    "DisplayToast": "Afficher une notification",
+    "GoToAdminPage": "Aller à la page admin",
+    "ThisIsAToast": "Ceci est une notification",
+    "Hello": "Bonjour",
+    "WelcomeToYourNextjsApp": "Bienvenue sur votre application Nextjs !",
+    "DialogExample": "Exemple boite de dialogue",
+    "DialogMainContent": "Ajoutez le contenu que vous souhaitez afficher dans votre boite de dialogue.",
+    "MainContent": "Contenu principal",
+    "DialogDescription": "Voici un exemple de contenu d'une boite de dialogue. Vous pouvez personnaliser ce contenu selon vos besoins.",
+    "Open Dialog": "Ouvrir une boite dialogue"
+  },
+  "Topbar": {
+    "Features": "Fonctionnalités",
+    "Testimonials": "Témoignages",
+    "Pricing": "Tarifs",
+    "FAQ": "FAQ",
+    "Login": "Se Connecter"
   }
 }
