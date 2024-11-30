@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import React from 'react';
 import { ThemeProvider } from '@/providers/theme-provider';
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -31,25 +32,22 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
-
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            {children});
+            <Toaster />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

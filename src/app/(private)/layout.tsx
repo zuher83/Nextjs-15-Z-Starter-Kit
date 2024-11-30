@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 import {
@@ -18,12 +19,10 @@ import { ThemeToggle } from '@/components/theme-toogle';
 import { AppSidebar } from '@/components/app-sidebar';
 import { Separator } from '@/components/ui/separator';
 
-export default async function PrivateLayout({
+export default function PrivateLayout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
   return (
     <SidebarProvider>
