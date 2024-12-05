@@ -25,5 +25,8 @@
     "Pricing": "Preise",
     "FAQ": "Häufige Fragen",
     "Login": "Anmelden"
+  },
+  "AdminPage": {
+    "WelcomeBackendHomePage": "Willkommen Diese Admin-Homepage"
   }
 }

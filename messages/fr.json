@@ -25,5 +25,8 @@
     "Pricing": "Tarifs",
     "FAQ": "FAQ",
     "Login": "Se Connecter"
+  },
+  "AdminPage": {
+    "WelcomeBackendHomePage": "Bienvenu Sur La Page Admin"
   }
 }

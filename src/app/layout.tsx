@@ -3,10 +3,10 @@ import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getLocale, getMessages } from 'next-intl/server';
 import React from 'react';
 import { ThemeProvider } from '@/providers/theme-provider';
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from '@/components/ui/toaster';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -27,13 +27,14 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const locale = await getLocale();
   const messages = await getMessages();
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body

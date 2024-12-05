@@ -1,3 +1,8 @@
+import { useTranslations } from 'next-intl';
+
 export default function Page() {
-  return <h1 className="text-center text-2xl">Welcome Backend Home Page</h1>;
+  const t = useTranslations('AdminPage');
+  return (
+    <h1 className="text-center text-2xl">{t('WelcomeBackendHomePage')}</h1>
+  );
 }
